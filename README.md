@@ -9,7 +9,7 @@ simply clips into your wall control.
 
 - Control opening and closing
 - Retrieve door open or closed status
-- Retrieve the status of the carriage lamp (⚠️Untested yet)
+- Retrieve the status of the carriage lamp
 - Forward original Keypad and Light connector
 
 **Compatible doors :** S 9050 pro / S 9050 pro+ / S 9060 pro / S 9060 pro+ / S 9080 pro / S 9080 pro+ / S 9110 pro / S
@@ -49,8 +49,8 @@ Connectors :
 
 | Location    | Type                        | Helpful information |
 |-------------|-----------------------------|---------------------|
-| LIGHT       | (todo)                      |                     | 
-| LIGHT (L R) | (todo)                      |                     | 
+| LIGHT       | PH2.0 Female                |                     | 
+| LIGHT (L R) | PH2.0 Male 100mm Wire       | Cable 10mm          | 
 | KEYPAD      | Dupont 2.54mm Male 3 pins   |                     | 
 | H1          | Dupont 2.54mm Female 4 pins |                     | 
 | H2          | Dupont 2.54mm Female 3 pins |                     | 
@@ -65,12 +65,12 @@ Append this part to your existing ESPHome configuration :
 binary_sensor:
   - platform: gpio
     pin: GPIO16
-    name: "Door status"
+    name: "Door"
     id: door_status
     device_class: "door"
   - platform: gpio
     pin: GPIO14
-    name: "Light status"
+    name: "Light"
     device_class: "light"
 
 
