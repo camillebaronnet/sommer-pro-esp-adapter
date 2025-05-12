@@ -44,6 +44,7 @@ Components :
 | L1             | 100uH            | Package D4xL10.5mm                                                                                                         | 
 | D1             | Schottky Barrier |                                                                                                                            |
 | Q1, Q2         | MOSFET CANAL-N   | Exemple 2N2222 or 2N7000                                                                                                   | 
+| U2             | LM2576T-5.0      |                                                                                                                            |
 
 Connectors :
 
